@@ -3,3 +3,5 @@
 ![CI](https://github.com/ursula95/frontend-project-lvl1/workflows/CI/badge.svg)
 
 [![asciicast](https://asciinema.org/a/395402.svg)](https://asciinema.org/a/395402)
+
+[![asciicast](https://asciinema.org/a/1t7Hkr48237UJfV7KiwnTminc.svg)](https://asciinema.org/a/1t7Hkr48237UJfV7KiwnTminc)
