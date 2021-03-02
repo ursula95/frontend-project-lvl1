@@ -1,15 +1,15 @@
 import readlineSync from 'readline-sync';
 
 function brainCalc() {
-    let counter = 0;
-    console.log('What is the result of the expression?');
-    const operators = ['+', '-', '*'];
+  let counter = 0;
+  console.log('What is the result of the expression?');
+  const operators = ['+', '-', '*'];
 
     while (counter < 3) {
         const currentNumber = Math.ceil(Math.random() * 100);
         const currentNumberSecond = Math.ceil(Math.random() * 100);
         const currentOperator = operators[Math.floor(Math.random() * operators.length)];
-        const correctAnswer = eval(`${currentNumber}${currentOperator}${currentNumberSecond}`);
+const correctAnswer = eval(`${currentNumber}${currentOperator}${currentNumberSecond}`);
 
         console.log(`Question: ${currentNumber} ${currentOperator} ${currentNumberSecond}`);
         const answerOfUser = readlineSync.question('Your answer: ');

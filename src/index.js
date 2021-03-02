@@ -1,9 +1,9 @@
-import sayHelloByName from '../src/cli.js';
+import sayHelloByName from './cli.js';
 
 const run = (currentGame) => {
   console.log('Welcome to the Brain Games!');
   const userName = sayHelloByName();
-  if (currentGame === true) {
+  if (currentGame() === true) {
     console.log(`Congratulations, ${userName}!`);
   } else {
     console.log(`Let's try again, ${userName}`);
@@ -11,4 +11,3 @@ const run = (currentGame) => {
 };
 
 export default run;
-
