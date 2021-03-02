@@ -8,29 +8,21 @@ function brainEven() {
     const currentNumber = Math.ceil(Math.random() * 100);
     console.log(`Question: ${currentNumber}`);
     const answerOfUser = readlineSync.question('Your answer: ');
+    let correctAnswer = 'no';
 
-    if (answerOfUser !== 'yes' && answerOfUser !== 'no') {
-      console.log(`Let's try again, ${userName}`);
+    if (currentNumber % 2 === 0) {
+      correctAnswer = 'yes';
+    }
+
+    if (answerOfUser === correctAnswer) {
+      console.log('Correct!');
+      counter += 1;
+    } else {
+      console.log(`"${answerOfUser}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
       return false;
-    } else if (currentNumber % 2 === 0) {
-      if (answerOfUser === 'yes') {
-        console.log('Correct!');
-        counter += 1;
-      } else {
-        console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.`);
-        return false;
-      }
-    } else if (currentNumber % 2 !== 0) {
-      if (answerOfUser === 'no') {
-        console.log('Correct!');
-        counter += 1;
-      } else {
-        console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.`);
-        return false;
-      }
     }
   }
   return true;
-};
+}
 
 export default brainEven;

@@ -5,13 +5,13 @@ function brainGcd() {
   let counter = 0;
 
   const nod = (a, b) => {
-	  if (b > a) {
+    if (b > a) {
       return nod(b, a);
-    }    
+    }
     if (!b) {
       return a;
     }
-	  return nod(b, a % b);
+    return nod(b, a % b);
   };
 
   while (counter < 3) {
@@ -31,6 +31,6 @@ function brainGcd() {
     }
   }
   return true;
-};
+}
 
 export default brainGcd;
