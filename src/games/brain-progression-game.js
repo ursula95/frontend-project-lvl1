@@ -6,7 +6,6 @@ function brainProgression() {
 
   while (counter < 3) {
     const sourceArr = [];
-    const showedArr = [];
 
     const firstNum = Math.ceil(Math.random() * 100);
     const step = Math.ceil(Math.random() * 100);
@@ -18,16 +17,14 @@ function brainProgression() {
       sourceArr.push(i);
     }
 
-    for (const value of sourceArr) {
-      if (value === sourceArr[indexOfHiddenNum]) {
-        hiddenNum = value;
-        showedArr.push(' .. ');
-      } else {
-        showedArr.push(value);
+    sourceArr.forEach((element) => {
+      if (element === sourceArr[indexOfHiddenNum]) {
+        hiddenNum = element;
+        sourceArr[indexOfHiddenNum] = ' .. ';
       }
-    }
+    });
 
-    console.log(`Question: ${showedArr}`);
+    console.log(`Question: ${sourceArr}`);
     const answerOfUser = readlineSync.question('Your answer: ');
 
     if (answerOfUser === `${hiddenNum}`) {
