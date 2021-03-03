@@ -6,7 +6,7 @@ const run = (currentGame) => {
   if (currentGame() === true) {
     console.log(`Congratulations, ${userName}!`);
   } else {
-    console.log(`Let's try again, ${userName}`);
+    console.log(`Let's try again, ${userName}!`);
   }
 };
 
