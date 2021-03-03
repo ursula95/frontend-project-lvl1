@@ -17,7 +17,7 @@ jobs:
       - name: Checkout code
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - run: make lint
+      - run: npx eslint .
 
       # Runs the Super-Linter action
       - name: Run Super-Linter
