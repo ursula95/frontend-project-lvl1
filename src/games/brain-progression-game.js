@@ -9,7 +9,7 @@ function brainProgression() {
 
     const firstNum = Math.ceil(Math.random() * 100);
     const step = Math.ceil(Math.random() * 100);
-    const size = Math.ceil(Math.random() * 5 + 10);
+    const size = Math.ceil(Math.random() * 6 + 11);
     const indexOfHiddenNum = Math.ceil(Math.random() * (size - 1));
     let hiddenNum = 0;
 
@@ -24,7 +24,9 @@ function brainProgression() {
       }
     });
 
-    console.log(`Question: ${sourceArr}`);
+    const showedProgression = sourceArr.join(' ');
+
+    console.log(`Question: ${showedProgression}`);
     const answerOfUser = readlineSync.question('Your answer: ');
 
     if (answerOfUser === `${hiddenNum}`) {
