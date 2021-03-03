@@ -1,7 +1,7 @@
 # Brain games
 [![Maintainability](https://api.codeclimate.com/v1/badges/72440d520d56bc769287/maintainability)](https://codeclimate.com/github/ursula95/frontend-project-lvl1/maintainability)
 
-
+[![Linter](https://github.com/ursula95/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)](https://github.com/ursula95/frontend-project-lvl1/actions/workflows/linter.yml)
 
 ## Brain-even
 [![asciicast](https://asciinema.org/a/395402.svg)](https://asciinema.org/a/395402)
